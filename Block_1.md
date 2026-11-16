@@ -178,7 +178,7 @@ When it looks correct, click on "Download All Results". In order for each sequen
 ---
 ## Copy the file onto your `<USER>/fluA/data` directory
 ```bash
-scp sequences_IA_HA_NA.fasta <USER>@login01.lisc.univie.ac.at:/lisc/scratch/course/2025w301520/<USER>/fluA/data;
+scp sequences_IA_HA_NA.fasta <USER>@login01.lisc.univie.ac.at:/lisc/scratch/course/2026w311520/<USER>/fluA/data;
 ```
 
 Now, we are ready to start... preparing the files!
