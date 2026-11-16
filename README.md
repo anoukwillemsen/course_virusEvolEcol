@@ -1,4 +1,4 @@
-# Virus Evolution and Ecology lectures
+# Virus Evolution and Ecology course
 Companion repository for the WS2026 VEElab lectures 2026w311520. 
 
 ## Overview and Project Description
