@@ -1,9 +1,9 @@
-# Virus Evolution and Ecology lecture
-Companion repository for the WS2026 Veelab Lecture 2026w311520 on Virus evolution and ecology. 
+# Virus Evolution and Ecology lectures
+Companion repository for the WS2026 VEElab lectures 2026w311520 on Virus Evolution and Ecology. 
 
 ## Overview and Project Description
-In this part of the lecture, we focus on two bioinformatic exercises on two viruses:
-1. Project 1: Phylogenetics of Influenzaviruses
+In this part of the lectures, we focus on two bioinformatic exercises on two viruses:
+1. Project 1: Phylogenetics of influenza viruses
 2. Project 2: Recombination events in Hepatitis D virus
 
 
@@ -54,6 +54,6 @@ Linux Commands Cheat Sheet: [www.geeksforgeeks.org/linux-unix/linux-commands-che
 
 [Block 2: Processing data, translation, alignment, tree calculation](Block_2.md)
 
-[Block 3: iTOL visualization, tree discussion](Block_3.md)
+[Block 3: iTOL visualisation, tree discussion](Block_3.md)
 
 [Block 4: Project 2 introduction and exercises](Block_4.md)
