@@ -145,6 +145,7 @@ These are the filtering criteria we will use to download the correct sequences:
 - Host (3): avian, swine, human
 - exclude lab strains
 - Segment (2): HA & NA
+- test
 
 <details> 
 <summary>After choosing these filters, it should look like this:</summary>
