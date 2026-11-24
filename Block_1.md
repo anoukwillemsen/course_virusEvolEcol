@@ -70,7 +70,7 @@ In our course directory (`/lisc/data/scratch/course/2026w311520`), create the fo
 <summary>See commands</summary>
 
 ```bash
-cd /lisc/scratch/course/2025w301520/;
+cd /lisc/scratch/course/2026w311520/;
 mkdir <USER>;
 cd  <USER>;
 ```
