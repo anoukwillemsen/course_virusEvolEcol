@@ -338,7 +338,7 @@ HA_genes_newHead.ffn \  # specify input file
 <summary>See output</summary>
 
 ```bash
-less HA_genes_newHead_trans3.tab;
+less tmp_HA_genes_newHead_trans3.tab;
 ```
 
 ![](./images/HA_genes_newHead_trans3_tab.png)
@@ -347,8 +347,8 @@ less HA_genes_newHead_trans3.tab;
 
 ### Get a tabular file with the corresponding predicted correct frame
 ```bash
-perl ../scripts/predict_frame.pl HA_genes_newHead_trans3.tab > tmp_HA_genes_newHead_frame.tab;
-perl ../scripts/predict_frame.pl NA_genes_newHead_trans3.tab > tmp_NA_genes_newHead_frame.tab;
+perl ../scripts/predict_frame.pl tmp_HA_genes_newHead_trans3.tab > tmp_HA_genes_newHead_frame.tab;
+perl ../scripts/predict_frame.pl tmp_NA_genes_newHead_trans3.tab > tmp_NA_genes_newHead_frame.tab;
 ```
 See <a href="./scripts/predict_frame.pl" target="_blank">predict_frame.pl</a>
 
@@ -358,7 +358,7 @@ See <a href="./scripts/predict_frame.pl" target="_blank">predict_frame.pl</a>
 <summary>See output</summary>
 
 ```bash
-less HA_genes_newHead_frame.tab;
+less tmp_HA_genes_newHead_frame.tab;
 ```
 
 ![](./images/HA_genes_newHead_frame_tab.png)
