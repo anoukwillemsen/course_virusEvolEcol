@@ -175,10 +175,9 @@ When it looks correct, click on "Download All Results". In order for each sequen
 </br>
 
 ---
-## Copy over our PROVIDED sequences
+## Copy over our PROVIDED sequences into data subdirectory
 ```bash
-cd data/
-cp ../../../course_virusEvolEcol/data/sequences_IA_HA_NA.fasta .
+cp ../../course_virusEvolEcol/data/sequences_IA_HA_NA.fasta data/
 ```
 
 Now, we are ready to start... cleaning up the downloaded file!
