@@ -30,7 +30,7 @@ cd ../tree;
 We will align the sequences with `mafft` (https://mafft.cbrc.jp/alignment/server/index.html). Its a solid and widely used aligner, which can handle our ~800 sequences. Still, this step will take a couple of minutes!
 
 ```bash
-module load MAFFT/7.526-GCC-14.3.0-with-extensions
+module load MAFFT/7.526-GCC-14.3.0-with-extensions;
 
 mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/HA_genes_newHead_corrFrame.faa > HA_genes_newHead_corrFrame_aln.faa;
 mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/NA_genes_newHead_corrFrame.faa > NA_genes_newHead_corrFrame_aln.faa;
@@ -42,8 +42,8 @@ We use pal2nal.pl (https://www.bork.embl.de/pal2nal/) to backtranslate. You need
 
 ```bash
 
-perl ../scripts/pal2nal.v14/pal2nal.pl HA_genes_newHead_corrFrame_aln.faa ../tmp/HA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > HA_genes_newHead_corrFrame_aln.ffn
-perl ../scripts/pal2nal.v14/pal2nal.pl NA_genes_newHead_corrFrame_aln.faa ../tmp/NA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > NA_genes_newHead_corrFrame_aln.ffn
+perl ../scripts/pal2nal.v14/pal2nal.pl HA_genes_newHead_corrFrame_aln.faa ../tmp/HA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > HA_genes_newHead_corrFrame_aln.ffn;
+perl ../scripts/pal2nal.v14/pal2nal.pl NA_genes_newHead_corrFrame_aln.faa ../tmp/NA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > NA_genes_newHead_corrFrame_aln.ffn;
 ```
 
 **Step 3: View alignment and trim**
