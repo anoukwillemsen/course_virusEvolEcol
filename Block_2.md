@@ -398,7 +398,7 @@ To view this example click the <Kbd>End</Kbd> key.
 
 ![](./images/HA_genes_newHead_corrFrame_trailingStop.png)
 
-⚠️ **Warning!** Some genes still have additional residues after the stop codon!
+⚠️ **Warning!** Some genes still have additional residues after the stop codon! 😱
 
 </details>
 
