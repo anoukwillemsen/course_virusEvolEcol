@@ -37,6 +37,13 @@ less ../data/sequences_IA_HA_NA.fasta;
 ```bash
 grep -c ">" ../data/sequences_IA_HA_NA.fasta;
 ```
+<details>
+
+<summary>See output</summary>
+
+> 2833
+
+</details>
 <br/>
 
 
