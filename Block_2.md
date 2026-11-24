@@ -139,6 +139,13 @@ grep "^>" ../data/sequences_IA_HA_NA.fasta | grep -v "KC95119[68]" | sed 's/.\+v
 ```bash
 wc -l HA_NA_genes.lst;
 ```
+<details>
+
+<summary>See output</summary>
+
+> 806 HA_NA_genes.lst
+
+</details>
 <br/>
 
 
