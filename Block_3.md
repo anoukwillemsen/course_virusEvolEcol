@@ -50,8 +50,8 @@ Lets first view our alignment using [Aliview](https://github.com/AliView/AliView
 
 But then we need to copy over the files to our local machine:
 ```bash
-scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER>/fluA/treeHA_genes_newHead_corrFrame_aln.ffn .
-scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER>/fluA/treeNA_genes_newHead_corrFrame_aln.ffn .
+scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER>/fluA/treeHA_genes_newHead_corrFrame_aln.ffn .;
+scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER>/fluA/treeNA_genes_newHead_corrFrame_aln.ffn .;
 ```
 
 Have a look at the alignment!
@@ -63,11 +63,11 @@ As you've seen, we got some overhangs in our alignment, which creates unnecessar
 
 For now, lets trim. We are going to use `trimal` for that. 
 
-```
-module load trimAl/1.5.1-GCCcore-13.3.0
+```bash
+module load trimAl/1.5.1-GCCcore-13.3.0;
 
-trimal -in NA_genes_newHead_corrFrame_aln.ffn -out NA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1
-trimal -in HA_genes_newHead_corrFrame_aln.ffn -out HA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1
+trimal -in NA_genes_newHead_corrFrame_aln.ffn -out NA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1;
+trimal -in HA_genes_newHead_corrFrame_aln.ffn -out HA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1;
 ```
 
 Have a look at the alignment again! Did that work? Are we happy with the alignment how it is?
@@ -83,8 +83,8 @@ https://iqtree.github.io/doc/Tutorial
 
 This are the commands we will be running, which take like ~40 min each. So grab a coffee :). 
 
-```
-module load IQ-TREE/2.4.0 
+```bash
+module load IQ-TREE/2.4.0;
 
 iqtree2 -s NA_genes_newHead_corrFrame_aln_trimmed.ffn \
   -m GTR+R6 \
@@ -97,8 +97,7 @@ iqtree2 -s HA_genes_newHead_corrFrame_aln_trimmed.ffn \
   -m GTR+R6 \
   -B 1000 -alrt 1000 \
   -T 4 \
-  -pre HA_tree
-
+  -pre HA_tree;
 ```
 
 Here's the breakdown of the command:
