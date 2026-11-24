@@ -143,7 +143,7 @@ These are the filtering criteria we will use to download the correct sequences:
 - Nucleotide completeness: complete
 - Host (3): avian, swine, human
 - exclude lab strains
-- Segment (2): HA & NA
+- Segment (2): HA (segment 4) & NA (segment 6)
 
 <details> 
 <summary>After choosing these filters, it should look like this:</summary>
