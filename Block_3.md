@@ -49,8 +49,8 @@ Lets first view our alignment using [Aliview](https://github.com/AliView/AliView
 
 But then we need to copy over the files to our local machine:
 ```bash
-scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2025w301520/<user>/fluA/tree/HA_genes_newHead_corrFrame_aln.ffn .
-scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2025w301520/<user>/fluA/tree/NA_genes_newHead_corrFrame_aln.ffn .
+scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER>/fluA/treeHA_genes_newHead_corrFrame_aln.ffn .
+scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER>/fluA/treeNA_genes_newHead_corrFrame_aln.ffn .
 ```
 
 Have a look at the alignment!
