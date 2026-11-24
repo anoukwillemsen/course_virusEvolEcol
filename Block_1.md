@@ -9,7 +9,7 @@ Read that and continue here.
 
 **SSH Login**
 
-To login to LiSC, open `tabby` and run the following command, where `<user>` is your personal user login:
+To login to LiSC, open `tabby` (or any other terminal emulator) and run the following command, where `<user>` is your personal user login:
 ```bash
 ssh <user>@login01.lisc.univie.ac.at
 ```
@@ -64,8 +64,7 @@ The terminal is slightly different than other programs e.g. when it comes to cop
 
 ---
 ## Implement the project structure
-In our course directory (`/lisc/scratch/course/2025w301520/`), create the folder `<USER>` (replace `<USER>` with your username) and go into it.
-
+In our course directory (`/lisc/scratch/course/2025w301520/`), create the folder `<USER>` (replace `<USER>` with your username) and go into it. Short note: the ";" at the end of commands is not necessary, only if you link multiple commands next to each other. 
 <details>
 
 <summary>See commands</summary>
