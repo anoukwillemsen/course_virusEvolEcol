@@ -315,8 +315,8 @@ To view this example click the <Kbd>End</Kbd> key.
 ### Identify correct starting frame and trim resulting files
 Make a tabular file with percentage of asterisks in the third colum.
 ```bash
-seqkit translate --allow-unknown-codon --frame 1,2,3 --transl-table 1 --seq-type dna --threads 2 HA_genes_newHead.ffn | seqkit fx2tab -B '*' > HA_genes_newHead_trans3.tab;
-seqkit translate --allow-unknown-codon --frame 1,2,3 --transl-table 1 --seq-type dna --threads 2 NA_genes_newHead.ffn | seqkit fx2tab -B '*' > NA_genes_newHead_trans3.tab;
+seqkit translate --allow-unknown-codon --frame 1,2,3 --transl-table 1 --seq-type dna --threads 2 HA_genes_newHead.ffn | seqkit fx2tab -B '*' > tmp_HA_genes_newHead_trans3.tab;
+seqkit translate --allow-unknown-codon --frame 1,2,3 --transl-table 1 --seq-type dna --threads 2 NA_genes_newHead.ffn | seqkit fx2tab -B '*' > tmp_NA_genes_newHead_trans3.tab;
 ```
 
 - Command breakdown
