@@ -64,7 +64,7 @@ The terminal is slightly different than other programs e.g. when it comes to cop
 
 ---
 ## Implement the project structure
-In our course directory (`/lisc/scratch/course/2025w301520/`), create the folder `<USER>` (replace `<USER>` with your username) and go into it. Short note: the ";" at the end of commands is not necessary, only if you link multiple commands next to each other. 
+In our course directory (`/lisc/data/scratch/course/2026w311520`), create the folder `<USER>` (replace `<USER>` with your username) and go into it. Short note: the ";" at the end of commands is not necessary, only if you link multiple commands next to each other. 
 <details>
 
 <summary>See commands</summary>
@@ -114,7 +114,7 @@ tree .;
 
 ---
 ## Populate your script directory
-Copy all scripts (`*`) from `/lisc/data/scratch/course/2025w301520/fluA/scripts` to your own script directory (`<USER>/fluA/scripts`)
+Copy all scripts (`*`) from `/lisc/data/scratch/course/2026w311520/course_virusEvolEcol/fluA/scripts` to your own script directory (`<USER>/fluA/scripts`)
 
 ```bash
 cp /lisc/data/scratch/course/2025w301520/fluA/scripts/* scripts/;
@@ -175,9 +175,9 @@ When it looks correct, click on "Download All Results". In order for each sequen
 </br>
 
 ---
-## Copy the file onto your `<USER>/fluA/data` directory
+## Copy over our PROVIDED sequences
 ```bash
-scp sequences_IA_HA_NA.fasta <USER>@login01.lisc.univie.ac.at:/lisc/scratch/course/2026w311520/<USER>/fluA/data;
+cp TODO;
 ```
 
 Now, we are ready to start... preparing the files!
