@@ -280,8 +280,7 @@ sed 's/>\(\S\+\) \S\+ .\+|\(H[0-9]\+N[0-9]\+\)|[^|]\+|[0-9]\+|\(\S\+\)/>\1|\2|\3
 
 Wait! lets first load **[seqkit](https://bioinf.shenwei.me/seqkit/)**!
 ```bash
-module load conda;
-conda activate seqkit-2.10.1;
+module load SeqKit/2.10.1;
 ```
 
 Now, to the translation.
