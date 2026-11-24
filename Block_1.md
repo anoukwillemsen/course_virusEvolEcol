@@ -177,10 +177,11 @@ When it looks correct, click on "Download All Results". In order for each sequen
 ---
 ## Copy over our PROVIDED sequences
 ```bash
-cp TODO;
+cd data/
+cp ../../course_virusEvolEcol/data/sequences.fasta .
 ```
 
-Now, we are ready to start... preparing the files!
+Now, we are ready to start... cleaning up the downloaded file!
 
 </br>
 
