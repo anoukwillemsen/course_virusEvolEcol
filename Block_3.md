@@ -21,7 +21,9 @@ By going back and forth like the way we do this, we avoid b) while having the ni
 
 For these steps, we move to `tree/`:
 
-`$ cd ../tree`
+```bash
+cd ../tree;
+```
 
 **Step 1: AA Alignment**
 
