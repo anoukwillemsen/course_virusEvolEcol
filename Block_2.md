@@ -347,8 +347,8 @@ less HA_genes_newHead_trans3.tab;
 
 ### Get a tabular file with the corresponding predicted correct frame
 ```bash
-perl ../scripts/predict_frame.pl HA_genes_newHead_trans3.tab > HA_genes_newHead_frame.tab;
-perl ../scripts/predict_frame.pl NA_genes_newHead_trans3.tab > NA_genes_newHead_frame.tab;
+perl ../scripts/predict_frame.pl HA_genes_newHead_trans3.tab > tmp_HA_genes_newHead_frame.tab;
+perl ../scripts/predict_frame.pl NA_genes_newHead_trans3.tab > tmp_NA_genes_newHead_frame.tab;
 ```
 See <a href="./scripts/predict_frame.pl" target="_blank">predict_frame.pl</a>
 
