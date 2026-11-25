@@ -113,7 +113,15 @@ Here's the breakdown of the command:
 | `-T 4` | Uses **4 threads** for parallel computation. |
 | `-pre NA_tree` | Sets the output file prefix. |
 
+- You can check out the progress on the log files using `less`
 
+```bash
+less HA_tree.log;
+```
+or
+```bash
+less NA_tree.log;
+```
 
 ## Tree Visualization
 
