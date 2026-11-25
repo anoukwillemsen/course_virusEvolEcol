@@ -50,7 +50,11 @@ sbatch \               # Submit a batch script to SLURM worload manager
 
 **Step 2: Back-translation**
 
-We use pal2nal.pl (https://www.bork.embl.de/pal2nal/) to backtranslate. You already copied the `pal2nal.pl` script from `/lisc/data/scratch/course/2026w311520/course_virusEvoEcol/scripts` to your scripts directory!
+We use pal2nal.pl (https://www.bork.embl.de/pal2nal/) to backtranslate. Let's first copy the `pal2nal.pl` script from `lisc/data/scratch/course/2026w311520/course_virusEvolEcol/scripts/pal2nal.v14` to your scripts directory and then run the backtranslation.
+
+```bash
+cp ../../../course_virusEvolEcol/scripts/pal2nal.v14/pal2nal.pl ../scripts/;
+```
 
 ```bash
 perl ../scripts/pal2nal.pl HA_genes_newHead_corrFrame_aln.faa ../tmp/HA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > HA_genes_newHead_corrFrame_aln.ffn;
