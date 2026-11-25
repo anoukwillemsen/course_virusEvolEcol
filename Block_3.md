@@ -32,8 +32,18 @@ We will align the sequences with `mafft` (https://mafft.cbrc.jp/alignment/server
 ```bash
 module load MAFFT/7.526-GCC-14.3.0-with-extensions;
 
-sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/HA_genes_newHead_corrFrame.faa > HA_genes_newHead_corrFrame_aln.faa";
-sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/NA_genes_newHead_corrFrame.faa > NA_genes_newHead_corrFrame_aln.faa";
+sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 10 --amino --localpair --maxiterate 1000 ../processed_HA_NA/HA_genes_newHead_corrFrame.faa > HA_genes_newHead_corrFrame_aln.faa";
+sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 10 --amino --localpair --maxiterate 1000 ../processed_HA_NA/NA_genes_newHead_corrFrame.faa > NA_genes_newHead_corrFrame_aln.faa";
+```
+
+- Command breakdown
+
+```bash
+sbatch \               # Submit a batch script to SLURM worload manager
+  --time=00:20:00 \      # assign maximum running time of 20 mins
+  --mem=5G \             # assign a total memory of 5GB
+  --cpus-per-task=10 \   # assign 20 CPUs to our task (a single one)
+  --wrap=<command>;      # pass command to execute
 ```
 
 **Step 2: Back-translation**
