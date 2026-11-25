@@ -150,9 +150,9 @@ Then try to do these steps, but also feel free to just play around:
 - **upload** your tree files (literally `NA_<something>.treefile`), which are saved in newick format.
 - have a look at different tree **layouts**
 - have a look at midpoint **rooting**
-- try to add datasets to your tree (we've prepared them for you in the `itol_datasets folder
+- try to add datasets to your tree (we've prepared them for you in the `itol_datasets folder`)
 - what do you find regarding subtypes, country, host, subtypes etc?
-- do you notice anything interesting (e.g. clusters of countries, hosts etc, or exemtion from these clusters?)
+- do you notice anything interesting (e.g. clusters of countries, hosts etc, or exemption from these clusters?)
 - try to link such **spillovers** to news/articles/historical knowledge you might find
 - ...
 
