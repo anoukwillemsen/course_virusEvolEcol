@@ -24,6 +24,7 @@ For these steps, we move to `tree/`:
 ```bash
 cd ../tree;
 ```
+<br/>
 
 **Step 1: AA Alignment**
 
@@ -45,6 +46,7 @@ sbatch \               # Submit a batch script to SLURM worload manager
   --cpus-per-task=10 \   # assign 20 CPUs to our task (a single one)
   --wrap=<command>;      # pass command to execute
 ```
+<br/>
 
 **Step 2: Back-translation**
 
@@ -54,6 +56,7 @@ We use pal2nal.pl (https://www.bork.embl.de/pal2nal/) to backtranslate. You alre
 perl ../scripts/pal2nal.pl HA_genes_newHead_corrFrame_aln.faa ../tmp/HA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > HA_genes_newHead_corrFrame_aln.ffn;
 perl ../scripts/pal2nal.pl NA_genes_newHead_corrFrame_aln.faa ../tmp/NA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > NA_genes_newHead_corrFrame_aln.ffn;
 ```
+<br/>
 
 **Step 3: View alignment and trim**
 Lets first view our alignment using [Aliview](https://github.com/AliView/AliView), a lightweight alignment viewer/editor.
@@ -66,6 +69,7 @@ scp <user>@login01.lisc.univie.ac.at:/lisc/data/scratch/course/2026w311520/<USER
 
 Have a look at the alignment!
 
+<br/>
 
 **Step 4: Trim alignment**
 
@@ -82,7 +86,7 @@ trimal -in NA_genes_newHead_corrFrame_aln.ffn -out NA_genes_newHead_corrFrame_al
 
 Have a look at the alignment again! Did that work? Are we happy with the alignment how it is?
 
-
+<br/>
 
 
 ## Phylogenetic tree calculation
@@ -122,6 +126,7 @@ or
 ```bash
 less NA_tree.log;
 ```
+<br/>
 
 ## Tree Visualization
 
