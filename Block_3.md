@@ -27,7 +27,7 @@ cd ../tree;
 
 **Step 1: AA Alignment**
 
-We will align the sequences with `mafft` (https://mafft.cbrc.jp/alignment/server/index.html). Its a solid and widely used aligner, which can handle our ~800 sequences. Still, this step will take a couple of minutes!
+We will align the sequences with `mafft` (https://mafft.cbrc.jp/alignment/server/index.html). Its a solid and widely used aligner, which can handle our ~800 sequences. Still, this step will take a couple of minutes! We will use the [SLURM](https://slurm.schedmd.com/) workload manager to submit this job.
 
 ```bash
 module load MAFFT/7.526-GCC-14.3.0-with-extensions;
