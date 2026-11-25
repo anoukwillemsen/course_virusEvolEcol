@@ -36,7 +36,7 @@ sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 10 --a
 sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 10 --amino --localpair --maxiterate 1000 ../processed_HA_NA/NA_genes_newHead_corrFrame.faa > NA_genes_newHead_corrFrame_aln.faa";
 ```
 
-- Command breakdown
+- Command breakdown (SLURM's `sbatch`)
 
 ```bash
 sbatch \               # Submit a batch script to SLURM worload manager
@@ -76,8 +76,8 @@ For now, lets trim. We are going to use `trimal` for that.
 ```bash
 module load trimAl/1.5.1-GCCcore-13.3.0;
 
-trimal -in NA_genes_newHead_corrFrame_aln.ffn -out NA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1;
 trimal -in HA_genes_newHead_corrFrame_aln.ffn -out HA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1;
+trimal -in NA_genes_newHead_corrFrame_aln.ffn -out NA_genes_newHead_corrFrame_aln_trimmed.ffn -automated1;
 ```
 
 Have a look at the alignment again! Did that work? Are we happy with the alignment how it is?
@@ -96,18 +96,11 @@ This are the commands we will be running, which take like ~40 min each. So grab 
 ```bash
 module load IQ-TREE/2.4.0;
 
-iqtree2 -s NA_genes_newHead_corrFrame_aln_trimmed.ffn \
-  -m GTR+R6 \
-  -B 1000 -alrt 1000 \
-  -T 4 \
-  -pre NA_tree;
+# Hemagglutinin genes
+sbatch --time=01:00:00 --mem=30G --cpus-per-task=5 --wrap="iqtree2 -s HA_genes_newHead_corrFrame_aln_trimmed.ffn -m GTR+R6 -B 1000 -alrt 1000 -T 5 -pre HA_tree";
 
-# and
-iqtree2 -s HA_genes_newHead_corrFrame_aln_trimmed.ffn \
-  -m GTR+R6 \
-  -B 1000 -alrt 1000 \
-  -T 4 \
-  -pre HA_tree;
+# Neuraminidase genes
+sbatch --time=01:00:00 --mem=30G --cpus-per-task=5 --wrap="iqtree2 -s NA_genes_newHead_corrFrame_aln_trimmed.ffn -m GTR+R6 -B 1000 -alrt 1000 -T 5 -pre NA_tree";
 ```
 
 Here's the breakdown of the command:
