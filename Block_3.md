@@ -51,8 +51,8 @@ sbatch \               # Submit a batch script to SLURM worload manager
 We use pal2nal.pl (https://www.bork.embl.de/pal2nal/) to backtranslate. You already copied the `pal2nal.pl` script from `/lisc/data/scratch/course/2026w311520/course_virusEvoEcol/scripts` to your scripts directory!
 
 ```bash
-perl ../scripts/pal2nal.v14/pal2nal.pl HA_genes_newHead_corrFrame_aln.faa ../tmp/HA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > HA_genes_newHead_corrFrame_aln.ffn;
-perl ../scripts/pal2nal.v14/pal2nal.pl NA_genes_newHead_corrFrame_aln.faa ../tmp/NA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > NA_genes_newHead_corrFrame_aln.ffn;
+perl ../scripts/pal2nal.pl HA_genes_newHead_corrFrame_aln.faa ../tmp/HA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > HA_genes_newHead_corrFrame_aln.ffn;
+perl ../scripts/pal2nal.pl NA_genes_newHead_corrFrame_aln.faa ../tmp/NA_genes_newHead_corrFrame.ffn -output fasta -codontable 1 > NA_genes_newHead_corrFrame_aln.ffn;
 ```
 
 **Step 3: View alignment and trim**
