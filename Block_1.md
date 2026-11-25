@@ -114,10 +114,10 @@ tree .;
 
 ---
 ## Populate your script directory
-Copy all scripts (`*`) from `/lisc/data/scratch/course/2026w311520/course_virusEvolEcol/fluA/scripts` to your own script directory (`<USER>/fluA/scripts`)
+Copy all scripts (`*`) from `/lisc/data/scratch/course/2026w311520/course_virusEvolEcol/scripts` to your own script directory (`<USER>/fluA/scripts`)
 
 ```bash
-cp /lisc/data/scratch/course/2026w311520/fluA/scripts/* scripts/;
+cp /lisc/data/scratch/course/2026w311520/scripts/* scripts/;
 ```
 
 Lets check it all looks fine.
