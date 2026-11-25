@@ -32,8 +32,8 @@ We will align the sequences with `mafft` (https://mafft.cbrc.jp/alignment/server
 ```bash
 module load MAFFT/7.526-GCC-14.3.0-with-extensions;
 
-mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/HA_genes_newHead_corrFrame.faa > HA_genes_newHead_corrFrame_aln.faa;
-mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/NA_genes_newHead_corrFrame.faa > NA_genes_newHead_corrFrame_aln.faa;
+sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/HA_genes_newHead_corrFrame.faa > HA_genes_newHead_corrFrame_aln.faa";
+sbatch --time=00:20:00 --mem=5G --cpus-per-task=10 --wrap="mafft --thread 4 --amino --localpair --maxiterate 1000 ../processed_HA_NA/NA_genes_newHead_corrFrame.faa > NA_genes_newHead_corrFrame_aln.faa";
 ```
 
 **Step 2: Back-translation**
